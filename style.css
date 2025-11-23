@@ -8,6 +8,30 @@
     letter-spacing: -0.2px;
 }
 
+
+/* Styles for screens with a maximum width of 768px (e.g.,mobile,
+tablets in portrait mode and smaller) */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .left-sidebar-container {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .middle-main-container {
+        margin: 5px 5px 5px 5px;
+    }
+
+    .top-middle-container {
+        margin: 10px 10px 15px 5px;
+    }
+}
+
 .dashboard-container {
     width: 100%;
     height: auto;
@@ -185,13 +209,16 @@
 .middle-main-container {
     width: 100%;
     height: auto;
-    margin: 10px 10px 10px 10px;
 }
 
 .top-middle-container {
     width: 100%;
     height: auto;
-    margin: 20px 20px 30px 10px;
-    background-color: wheat;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 1px solid rgba(245, 222, 179, 0.527);
 }
+
+.
